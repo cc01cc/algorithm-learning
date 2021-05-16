@@ -1,0 +1,6 @@
+/.metadata/
+.vs/
+*.exe
+*.o
+bin
+obj
