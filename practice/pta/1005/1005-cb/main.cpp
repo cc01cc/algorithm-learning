@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
 
-    // ¶ÁÈ¡ÊäÈë£¨list£©
-    // ¼ÆËãÊıÖµ
-    // ±È½ÏÊıÖµ£¨Ñ­»·£©
-    // ´æÈëÊı¾İ£¨Ñ­»·£©
-    // ²éÕÒÎ´´æÈëµÄÊı¾İ
+    // è¯»å–è¾“å…¥ï¼ˆlistï¼‰
+    // è®¡ç®—æ•°å€¼
+    // æ¯”è¾ƒæ•°å€¼ï¼ˆå¾ªç¯ï¼‰
+    // å­˜å…¥æ•°æ®ï¼ˆå¾ªç¯ï¼‰
+    // æŸ¥æ‰¾æœªå­˜å…¥çš„æ•°æ®
     return 0;
 }
 
@@ -20,7 +20,7 @@ int calculate(int num)
     int result;
     if(num % 2 == 0){result = evenCalculate(num);}
     else{result = oddCalculate(num);}
-    return reslut;
+    return result;
 }
 
 int oddCalculate(int odd)
@@ -28,7 +28,7 @@ int oddCalculate(int odd)
     return (odd*3+1)/2;
 }
 
-itn evenCalculate(int even)
+int evenCalculate(int even)
 {
     return even/2;
 }
