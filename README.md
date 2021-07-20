@@ -14,3 +14,4 @@
 2. yogykwan/acm-challenge-workbook: 《挑战程序设计竞赛》习题册攻略 : [https://github.com/yogykwan/acm-challenge-workbook](https://github.com/yogykwan/acm-challenge-workbook)
 3. BedirT/ACM-ICPC-Preparation: ACM-ICPC Preparation Guide : [https://github.com/BedirT/ACM-ICPC-Preparation](https://github.com/BedirT/ACM-ICPC-Preparation)
 4. ACM 的正确入门方式是什么？ - 知乎: [https://www.zhihu.com/question/51727516/answer/127265733](https://www.zhihu.com/question/51727516/answer/127265733)
+5. richenyunqi/CCF-CSP-and-PAT-solution: CCF CSP和PAT考试题解（使用C++14语法）: [https://github.com/richenyunqi/CCF-CSP-and-PAT-solution](https://github.com/richenyunqi/CCF-CSP-and-PAT-solution)
