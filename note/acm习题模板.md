@@ -55,9 +55,6 @@ int main(){
    int* n = new int[100]; //使用new动态开辟内存
    //int* n = (int*)malloc(100*sizeof(int));
    ```
-   
-
-   
 
 <div style="page-break-after: always;"></div>
 
@@ -85,8 +82,6 @@ memset(arr1, 0, sizeof(arr1));
 //将arr1中所有数据初始化为0
 void *memcpy(void *str1, const void *str2, size_t n); //强制复制
 ```
-
-
 
 #### `cmath`
 
@@ -185,8 +180,6 @@ clock_t clock(void); //返回程序执行起，处理器时钟所使用的时间
 time_t time(time_t *seconds); //返回自纪元 Epoch（1970-01-01 00:00:00 UTC）起经过的时间，以秒为单位。如果 seconds 不为空，则返回值也存储在变量 seconds 中。
 ```
 
-
-
 #### `cctype`
 
 ```c++
@@ -258,8 +251,6 @@ for(int i = 0, p2 = arr2; i < 100; i++, p2++){
     cout << *p2 << endl;
 }
 ```
-
-
 
 #### `<string>` 字符串
 
@@ -381,7 +372,7 @@ bst.to_ullong();
 
 #### 其他库
 
-`<functional>` , `<complex>` , `<unordered_set>` , `<unordered_map>` 
+`<functional>` , `<complex>` , `<unordered_set>` , `<unordered_map>`
 
 <div style="page-break-after: always;"></div>
 
@@ -394,8 +385,6 @@ for(auto a: arr) cout << a << endl; //for遍历
 //prev(), next()改变迭代器
 //lambda表达式
 ```
-
-
 
 ##### Dijkstra算法
 
@@ -453,12 +442,10 @@ int main()
             //每个值与自身进行比较，选取最小值。
         }
     }
-	//!!!!!!
+ //!!!!!!
     cout << d[n - 1] << endl;
     return 0;
 }
 ```
-
-
 
 1. 使用什么数据结构存储数据（数组，堆栈）
