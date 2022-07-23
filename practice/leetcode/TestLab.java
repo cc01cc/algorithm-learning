@@ -61,4 +61,53 @@ public class TestLab {
         int res = new Solution200_01().numIslands(c);
         System.out.println(res);
     }
+
+    @Test
+    public void testSoluction77_01() {
+//        int n = 4;
+//        int k = 2;
+        int n = 1;
+        int k = 1;
+        System.out.println(new Solution77_01().combine(n, k));
+    }
+    @Test
+    public void testSoluction77_02() {
+        int n = 4;
+        int k = 2;
+//        int n = 1;
+//        int k = 1;
+        System.out.println(new Solution77_02().combine(n, k));
+    }
+
+    @Test
+    public void testSoluction39_01() {
+        int[] candidates = new int[]{2,3,6,7};
+        int target = 7;
+        System.out.println(new Solution39_01().combinationSum(candidates, target));
+    }
+
+    @Test
+    public void testSoluction39_02() {
+        int[] candidates = new int[]{2,3,6,7};
+        int target = 7;
+        System.out.println(new Solution39_02().combinationSum(candidates, target));
+    }
+
+    @Test
+    public void  testSolution131_01() {
+        String s = "aab";
+        System.out.println(new Solution131_01().partition(s));
+    }
+
+    @Test
+    public void testSolution78_01() {
+        int[] nums = new int[]{1, 2, 3};
+
+        System.out.println(new Solution78_01().subsets(nums));
+    }
+
+    @Test
+    public void testLab() {
+        System.out.println("abc".substring(0, 3));
+    }
 }

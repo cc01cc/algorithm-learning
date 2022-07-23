@@ -46,7 +46,6 @@ public class Solution200_01 {
                 grid[c][r+1] = '2';
                 list.offer(new int[]{c, r+1});
             }
-
         }
     }
 }
