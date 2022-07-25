@@ -107,6 +107,11 @@ public class TestLab {
     }
 
     @Test
+    public void testSolution203_01() {
+
+    }
+
+    @Test
     public void testLab() {
         System.out.println("abc".substring(0, 3));
     }
