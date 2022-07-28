@@ -63,20 +63,20 @@ public class TestLab {
     }
 
     @Test
-    public void testSoluction77_01() {
+    public void testSoluction77_01_01() {
 //        int n = 4;
 //        int k = 2;
         int n = 1;
         int k = 1;
-        System.out.println(new Solution77_01().combine(n, k));
+        System.out.println(new Solution77_01_01().combine(n, k));
     }
     @Test
-    public void testSoluction77_02() {
+    public void testSoluction77_01_02() {
         int n = 4;
         int k = 2;
 //        int n = 1;
 //        int k = 1;
-        System.out.println(new Solution77_02().combine(n, k));
+        System.out.println(new Solution77_01_02().combine(n, k));
     }
 
     @Test

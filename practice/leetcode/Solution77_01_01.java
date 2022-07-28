@@ -17,7 +17,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution77_01 {
+public class Solution77_01_01 {
 
     // ! Leetcode 尽量不要使用 静态变量, 会有奇怪的错误
     public static List<List<Integer>> ret = new ArrayList<>();

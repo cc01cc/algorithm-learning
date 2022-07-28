@@ -17,7 +17,7 @@
 import java.util.ArrayList;
 import java.util.List;
 // 相比 01 添加了剪枝的操作
-public class Solution77_02 {
+public class Solution77_01_02 {
     public static List<List<Integer>> ret = new ArrayList<>();
     public static List<Integer> tempList = new ArrayList<>();
 
