@@ -84,10 +84,8 @@ public class LeetCode77_02_01 {
 
 ## 4. 代码下载
 
-> GitHub 更新会及时些
-
 1. Github LeetCode77_02_01.java: <https://github.com/cc01cc/algorithm-learning/blob/master/practice/leetcode/LeetCode77_02_01.java>
-2. （备用）城通网盘 LeetCode77_02_01.java: <https://url57.ctfile.com/f/37032957-627676689-07eff3?p=9427> (访问密码: 9427)
+2. （备用，非同步）城通网盘 LeetCode77_02_01.java: <https://url57.ctfile.com/f/37032957-627676689-07eff3?p=9427> (访问密码: 9427)
 
 ---
 
