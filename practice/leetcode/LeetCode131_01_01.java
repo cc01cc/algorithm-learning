@@ -30,27 +30,30 @@ public class LeetCode131_01_01 {
     public void backTracking(String s, int startIndex) {
         if (startIndex >= s.length()) {
             ret.add(new ArrayList<>(tempList));
-//            System.out.println(ret);
+            return;
         }
 
-
+        // startIndex + i 的最大值需要等于 s.length()
+        // 所以 i <= s.length - startIndex
         for (int i = 1; i <= s.length() - startIndex; i++) {
-            String tempStr = s.substring(startIndex, startIndex+i);
+            String tempStr = s.substring(startIndex, startIndex + i);
 
             if (judgePalindrome(tempStr)) {
                 tempList.add(tempStr);
             } else {
                 continue;
             }
+            // 截取时，左闭右开，所以下一轮从 startIndex + 1 开始
             backTracking(s, startIndex + i);
             tempList.remove(tempList.size() - 1);
         }
     }
 
+    // 判断是否为回文串
     public boolean judgePalindrome(String s) {
 
         int i = 0;
-        int j = s.length()-1;
+        int j = s.length() - 1;
 
         while (i < j) {
             if (s.charAt(i) != s.charAt(j)) return false;
