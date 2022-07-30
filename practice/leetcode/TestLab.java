@@ -83,20 +83,20 @@ public class TestLab {
     public void testSoluction39_01() {
         int[] candidates = new int[]{2,3,6,7};
         int target = 7;
-        System.out.println(new Solution39_01().combinationSum(candidates, target));
+        System.out.println(new LeetCode39_01_01().combinationSum(candidates, target));
     }
 
     @Test
     public void testSoluction39_02() {
         int[] candidates = new int[]{2,3,6,7};
         int target = 7;
-        System.out.println(new Solution39_02().combinationSum(candidates, target));
+        System.out.println(new LeetCode39_01_02().combinationSum(candidates, target));
     }
 
     @Test
     public void  testSolution131_01() {
         String s = "aab";
-        System.out.println(new Solution131_01().partition(s));
+        System.out.println(new LeetCode131_01_01().partition(s));
     }
 
     @Test

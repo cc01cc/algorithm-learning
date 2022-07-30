@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // 相比 01 添加剪枝操作
-public class Solution39_02 {
+public class LeetCode39_01_02 {
 
     public List<Integer> tempList = new ArrayList<>();
     public List<List<Integer>> ret = new ArrayList<>();

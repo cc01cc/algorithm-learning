@@ -17,7 +17,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution39_01 {
+public class LeetCode39_01_01 {
 
     public List<Integer> tempList = new ArrayList<>();
     public List<List<Integer>> ret = new ArrayList<>();
