@@ -2,7 +2,7 @@
 
 ## 1. 题目
 
-> - 题目链接：39. 组合总和 - 力扣（LeetCode）: <https://leetcode.cn/problems/combination-sum/>
+> - 题目链接：40. 组合总和 II - 力扣（LeetCode）: <https://leetcode.cn/problems/combination-sum-ii/>
 > - 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 给定一个候选人编号的集合 `candidates` 和一个目标数 `target` ，找出 `candidates` 中所有可以使数字和为 `target` 的组合。
@@ -29,11 +29,6 @@
 输入: candidates = [2,5,2,1,2], target = 5,
 输出:
 [[1,2,2],[5]]
-
-示例3
-
-输入: candidates = [2], target = 1
-输出: []
 ```
 
 ## 2. 题解参考
@@ -107,4 +102,3 @@ public class LeetCode40_01_01 {
   - cc01cc/algorithm-learning: <https://github.com/cc01cc/algorithm-learning>
 - 感谢
   - youngyangyang04/leetcode-master: 《代码随想录》LeetCode 刷题攻略: <https://github.com/youngyangyang04/leetcode-master>
-  - jgraph/drawio: Source to app.diagrams.net: <https://github.com/jgraph/drawio>

@@ -107,4 +107,3 @@ public class LeetCode39_02_01 {
   - cc01cc/algorithm-learning: <https://github.com/cc01cc/algorithm-learning>
 - 感谢
   - youngyangyang04/leetcode-master: 《代码随想录》LeetCode 刷题攻略: <https://github.com/youngyangyang04/leetcode-master>
-  - jgraph/drawio: Source to app.diagrams.net: <https://github.com/jgraph/drawio>

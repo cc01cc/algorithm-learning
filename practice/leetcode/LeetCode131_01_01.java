@@ -33,6 +33,7 @@ public class LeetCode131_01_01 {
             return;
         }
 
+        // i 负责控制截取子串的长度
         // startIndex + i 的最大值需要等于 s.length()
         // 所以 i <= s.length - startIndex
         for (int i = 1; i <= s.length() - startIndex; i++) {
