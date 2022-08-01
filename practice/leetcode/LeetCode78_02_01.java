@@ -17,26 +17,29 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution78_01 {
-    public List<Integer> tempList = new ArrayList<>();
+public class LeetCode78_02_01 {
     public List<List<Integer>> ret = new ArrayList<>();
+    public List<Integer> tempList = new ArrayList<>();
 
     public List<List<Integer>> subsets(int[] nums) {
-        for (int i = 0; i <= nums.length; i++) {
-
+        // 这儿的 i 表示组成单个结果的元素个数
+        // 不是表示索引，所以需要在 nums.length 后 +1
+        // 从零开始包含空集
+        for (int i = 0; i < nums.length + 1; i++) {
             backTracking(nums, 0, i);
         }
         return ret;
     }
 
-    // 添加包含 k 个元素的子集的集合
     public void backTracking(int[] nums, int startIndex, int k) {
         if (k == 0) {
             ret.add(new ArrayList(tempList));
             return;
         }
 
-        for (int i = startIndex; i < nums.length - k + 1; i++) {
+        // k - 1 表示除了本层之外（即 - 1）仍需要的元素个数
+        // i 至多遍历到 nums.length - (k - 1) 即可，之后的元素留给下一层递归
+        for (int i = startIndex; i < nums.length - (k - 1); i++) {
             tempList.add(nums[i]);
             backTracking(nums, i + 1, k - 1);
             tempList.remove(tempList.size() - 1);
