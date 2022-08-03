@@ -2,7 +2,7 @@
 
 ## 1. 题目
 
-> - 题目链接：93. 复原 IP 地址 - 力扣（LeetCode）: <https://leetcode.cn/problems/restore-ip-addresses/>
+> - 题目链接：78. 子集 - 力扣（LeetCode）: <https://leetcode.cn/problems/subsets/>
 > - 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 给你一个整数数组 `nums` ，数组中的元素 **互不相同** 。返回该数组所有可能的子集（幂集）。
