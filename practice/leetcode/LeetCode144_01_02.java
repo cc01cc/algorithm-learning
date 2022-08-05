@@ -18,41 +18,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class LeetCode94_02_02 {
+public class LeetCode144_01_02 {
 
-    public List<Integer> inorderTraversal(TreeNode root) {
+
+    public List<Integer> preorderTraversal(TreeNode root) {
 
         List<Integer> binaryTreeList = new ArrayList<>();
         Stack<TreeNode> treeNodeStack = new Stack<>();
 
-        // 当二叉树为空时
-        if (root == null) {
-            return binaryTreeList;
-        }
-
-        // 二叉树当前节点
         TreeNode cur = root;
 
-        // 当节点或栈不为空时
-        // 当栈为空，节点不为空，除了插入根节点，可能还有右孩子
         while (cur != null || !treeNodeStack.isEmpty()) {
-            // 根节点为 null 的话，前边判断了直接返回
-            // 此处 cur 为 null，表示没有右孩子
-            // 所以不需要增加新的左孩子
+
             if (cur != null) {
-                // 第一次执行时添加根节点
-                // 之后此处都是添加右孩子
+                // 把当前节点放入到结果集与栈中
                 treeNodeStack.push(cur);
+                binaryTreeList.add(cur.val);
+
+                // 循环遍历左孩子
                 while (cur.left != null) {
+                    // 将左孩子放入到结果集和栈中
                     treeNodeStack.push(cur.left);
+                    binaryTreeList.add(cur.left.val);
                     cur = cur.left;
                 }
             }
+            // 此处存在两种情况：
+            // cur 为 null，栈没有空
+            // cur 目前位于是一个左孩子，并且位于末梢
             cur = treeNodeStack.pop();
-            binaryTreeList.add(cur.val);
+
+            // 这儿 cur 从栈中取出并且栈不为空
+            // 所以 cur 一定有值 --> cur.right 存在
+            // 且不需要，也不可以判断 cur.right 是否为 null
+            // 避免陷入死循环
             cur = cur.right;
         }
         return binaryTreeList;
     }
-
 }
