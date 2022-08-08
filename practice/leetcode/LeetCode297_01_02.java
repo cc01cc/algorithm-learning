@@ -74,7 +74,7 @@ public class LeetCode297_01_02 {
 
                 // 如果节点不是 null 则将值添加到输出列表 listTree 中
                 listTree.add(String.valueOf(tempNode.val));
-                
+
                 if (tempNode.left != null || tempNode.right != null) {
                     queueAllNull = false;
                 }
