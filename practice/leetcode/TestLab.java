@@ -103,7 +103,7 @@ public class TestLab {
     public void testSolution78_01() {
         int[] nums = new int[]{1, 2, 3};
 
-        System.out.println(new Solution78_01().subsets(nums));
+        System.out.println(new LeetCode78_01_01().subsets(nums));
     }
 
     @Test

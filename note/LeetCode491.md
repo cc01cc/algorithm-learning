@@ -1,4 +1,4 @@
-# LeetCode 491
+# LeetCode 491 递增子序列 - Java 实现
 
 ## 1. 题目
 
@@ -106,3 +106,4 @@ public class LeetCode491_01_01 {
   - cc01cc/algorithm-learning: <https://github.com/cc01cc/algorithm-learning>
 - 感谢
   - youngyangyang04/leetcode-master: 《代码随想录》LeetCode 刷题攻略: <https://github.com/youngyangyang04/leetcode-master>
+- TAG: 回溯 Java LeetCode

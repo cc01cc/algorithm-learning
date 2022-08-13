@@ -53,6 +53,7 @@ public class LeetCode491_01_01 {
             tempList.add(nums[i]);
             usedNum.add(nums[i]);
 
+            // 子序列至少有两个元素
             if (tempList.size() > 1) {
                 ret.add(new ArrayList<>(tempList));
             }

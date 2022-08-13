@@ -27,6 +27,9 @@ public class LeetCode46_01_02 {
 
 
     public List<List<Integer>> permute(int[] nums) {
+        // 定义一个与 nums 等长的数组，用于记录当前的值是否被使用
+        // true 表示已被使用
+        // false 表示未被使用
         boolean[] numState = new boolean[nums.length];
         backTracking(nums, numState);
         return ret;

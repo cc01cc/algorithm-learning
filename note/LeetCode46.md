@@ -79,7 +79,7 @@ public class LeetCode46_01_02 {
 
 - 如何判断这个元素是否使用过
 
-最开始我使用的是列表存储没有被使用过的元素  ，但是发现速度比较慢，之后替换成本文中的数组记录的方法，使用数组揭露每个元素的使用状态。
+最开始我使用的是列表存储没有被使用过的元素 [LeetCode40_01_01](https://github.com/cc01cc/algorithm-learning/blob/master/practice/leetcode/LeetCode40_01_01.java) ，但是发现速度比较慢，之后替换成本文中使用数组记录每个元素使用状态的方法。
 
 ## 4. 代码下载
 

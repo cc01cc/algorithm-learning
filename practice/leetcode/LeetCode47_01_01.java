@@ -48,12 +48,6 @@ public class LeetCode47_01_01 {
         }
 
         for (int i = 0; i < nums.length; i++) {
-            // 这一层是否使用过相同的值
-            // 如何记录这一层使用过的值，不被同层使用
-            // 当前值使用后，跳转到与当前值不一致的下一个索引
-            // 特殊情况，位于末尾
-            // 同时下层需要可以使用相同值但是不同索引的值
-
             // 添加当前值到 tempList 的情况：
             // 当前值可用，且为第一个值；
             // 当前值可用，且前一个值和当前值不一致；
@@ -63,7 +57,6 @@ public class LeetCode47_01_01 {
             // 当前值不可用(即被使用);
             // 当前值可用，但该层已经使用过相同的值
             // (每次使用后，都跳转到下一个不同的值，所以判断时不需要考虑)
-
 
             if (numBeUsed[i] == true) {
                 continue;
@@ -82,7 +75,7 @@ public class LeetCode47_01_01 {
             // 假设 i 为 1, nums 为 [1,2,2,2]
             // while 循环结束后，i 为 3
             // 此轮 for 循环结束后，i 为 4，结束遍历
-            while (i < nums.length - 1 && nums[i] == nums[i+1]) {
+            while (i < nums.length - 1 && nums[i] == nums[i + 1]) {
                 i++;
             }
 
@@ -94,7 +87,7 @@ public class LeetCode47_01_01 {
 
     @Test
     public void test() {
-        int[] nums = {1,1,2,2};
+        int[] nums = {1, 1, 2, 2};
         System.out.println(permuteUnique(nums));
     }
 }
